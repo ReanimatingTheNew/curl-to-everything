@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO优化的元标签 -->
+    <title>Curl to JSON 转换工具 | 在线将curl命令转换为JSON格式</title>
+    <meta name="description" content="Curl to JSON 转换工具可以快速将curl命令转换为结构化的JSON格式，支持各种复杂参数解析。提供简洁的Web界面和API接口，帮助开发者高效分析和处理HTTP请求。">
+    <meta name="keywords" content="curl to json,curl命令解析器,API调试工具,HTTP请求分析,curl命令转换,JSON格式化,开发者工具">
+    
+    <!-- 社交媒体标签 -->
+    <meta property="og:title" content="Curl to JSON 转换工具 | 在线将curl命令转换为JSON格式">
+    <meta property="og:description" content="快速将curl命令转换为结构化的JSON格式，支持各种复杂参数解析。提供简洁的Web界面和API接口。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://curl-to.com/">
+    <meta property="og:image" content="https://curl-to.com/static/images/curl2json-og.png">
+    <meta property="og:site_name" content="Curl to JSON 转换工具">
+    
+    <!-- 规范化URL -->
+    <link rel="canonical" href="https://curl-to.com/">
+    
+    <!-- 样式表 -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 结构化数据标记 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Curl转JSON工具",
+      "url": "https://curl-to.com/",
+      "description": "在线快速将curl命令转换为JSON格式，支持多种参数解析，并提供API接口便于集成。",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="main-nav">
+                <div class="logo">
+                    <h1><a href="https://curl-to.com">Curl to JSON</a></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">功能特点</a></li>
+                    <li><a href="#demo">在线演示</a></li>
+                    <li><a href="#api">API文档</a></li>
+                    <li><a href="#examples">使用示例</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li class="cta-button"><a href="https://curl-to.com" class="btn">立即使用</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>将复杂的curl命令转换为清晰的JSON格式</h2>
+                    <p>专为开发者、API测试人员和网络安全专家设计的高效工具</p>
+                    <div class="hero-buttons">
+                        <a href="https://curl-to.com" class="btn btn-primary">立即体验</a>
+                        <a href="https://github.com/yourusername/curl-to-json-tool" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-image.png" alt="Curl to JSON 转换工具界面展示" class="img-placeholder">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="features" class="features">
+                <h2>功能特点</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>即时转换</h3>
+                        <p>将curl命令实时转换为JSON格式，无需等待</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧩</div>
+                        <h3>全面解析</h3>
+                        <p>支持各种复杂的curl参数和选项</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h3>一键复制</h3>
+                        <p>便捷的复制功能，轻松集成到您的工作流程</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3>多语言支持</h3>
+                        <p>界面支持多种语言，满足全球开发者需求</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔌</div>
+                        <h3>API接口</h3>
+                        <p>提供RESTful API，方便集成到您的应用程序中</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>响应式设计</h3>
+                        <p>完美适配桌面和移动设备</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="demo" class="demo">
+                <h2>在线演示</h2>
+                <p class="section-description">体验将curl命令转换为JSON的过程，下面是一个简单的演示示例</p>
+                
+                <div class="demo-container">
+                    <div class="demo-input">
+                        <h3>输入 (curl命令)</h3>
+                        <pre><code class="language-bash">curl -X POST https://api.example.com/data \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer token123" \
+  -d '{"name":"John","age":30}'</code></pre>
+                    </div>
+                    <div class="demo-arrow">
+                        <div class="arrow">→</div>
+                    </div>
+                    <div class="demo-output">
+                        <h3>输出 (JSON格式)</h3>
+                        <pre><code class="language-json">{
+  "method": "POST",
+  "url": "https://api.example.com/data",
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer token123"
+  },
+  "data": {
+    "name": "John",
+    "age": 30
+  }
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="demo-cta">
+                    <p>想要尝试更多复杂的curl命令转换？</p>
+                    <a href="https://curl-to.com" class="btn btn-primary">访问在线工具</a>
+                </div>
+            </section>
+
+            <section id="api" class="api">
+                <h2>API文档</h2>
+                <p class="section-description">我们提供简单易用的API接口，可以集成到您的应用程序中进行自动化curl命令解析和转换</p>
+                
+                <div class="api-docs">
+                    <div class="api-endpoint">
+                        <h3>接口地址</h3>
+                        <code>POST https://curl-to.com/api/convert</code>
+                    </div>
+                    
+                    <div class="api-request">
+                        <h3>请求格式</h3>
+                        <pre><code class="language-json">{
+  "curl": "your curl command here"
+}</code></pre>
+                    </div>
+                    
+                    <div class="api-response">
+                        <h3>响应格式</h3>
+                        <pre><code class="language-json">{
+  "method": "POST",
+  "url": "https://api.example.com",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": {
+    "key": "value"
+  }
+}</code></pre>
+                    </div>
+                </div>
+                
+                <div class="api-examples">
+                    <h3>示例代码</h3>
+                    <div class="code-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="js">JavaScript</button>
+                            <button class="tab-btn" data-tab="python">Python</button>
+                            <button class="tab-btn" data-tab="curl">Curl</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="js">
+<pre><code class="language-javascript">fetch('https://curl-to.com/api/convert', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        curl: 'curl -X POST https://api.example.com -H "Content-Type: application/json" -d \'{"key":"value"}\''
+    })
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));</code></pre>
+                            </div>
+                            <div class="tab-pane" id="python">
+<pre><code class="language-python">import requests
+import json
+
+url = "https://curl-to.com/api/convert"
+payload = {
+    "curl": 'curl -X POST https://api.example.com -H "Content-Type: application/json" -d \'{"key":"value"}\''
+}
+headers = {
+    "Content-Type": "application/json"
+}
+
+response = requests.post(url, headers=headers, data=json.dumps(payload))
+print(response.json())</code></pre>
+                            </div>
+                            <div class="tab-pane" id="curl">
+<pre><code class="language-bash">curl -X POST https://curl-to.com/api/convert \
+  -H "Content-Type: application/json" \
+  -d '{"curl": "curl -X POST https://api.example.com -H \"Content-Type: application/json\" -d \'{\"key\":\"value\"}\''"}'</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="examples" class="examples">
+                <h2>使用示例</h2>
+                <p class="section-description">了解如何在不同场景中使用我们的Curl to JSON转换工具</p>
+                
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <h3>API开发和测试</h3>
+                        <p>在开发新API时，使用我们的工具可以快速将curl命令转换为结构化的JSON格式，便于理解和修改请求参数。</p>
+                        <a href="https://curl-to.com/examples#api-dev" class="example-link">查看详情</a>
+                    </div>
+                    <div class="example-card">
+                        <h3>网络调试</h3>
+                        <p>在调试网络问题时，将浏览器网络面板中的请求导出为curl命令，然后使用我们的工具转换为JSON格式进行分析。</p>
+                        <a href="https://curl-to.com/examples#network-debug" class="example-link">查看详情</a>
+                    </div>
+                    <div class="example-card">
+                        <h3>安全测试</h3>
+                        <p>安全测试人员可以使用我们的工具分析和修改HTTP请求，以测试API的安全性和鲁棒性。</p>
+                        <a href="https://curl-to.com/examples#security-test" class="example-link">查看详情</a>
+                    </div>
+                    <div class="example-card">
+                        <h3>自动化工作流</h3>
+                        <p>通过我们的API接口，可以将curl命令转换功能集成到自动化测试和CI/CD流程中。</p>
+                        <a href="https://curl-to.com/examples#automation" class="example-link">查看详情</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>关于我们</h2>
+                <p class="section-description">Curl to JSON转换工具由一群热爱开发和效率的工程师创建，旨在简化API开发和测试流程</p>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>我们的使命</h3>
+                        <p>我们的使命是为开发者提供简单而强大的工具，帮助他们更高效地工作。我们相信，通过消除繁琐的手动解析过程，开发者可以将更多精力集中在创造有价值的产品上。</p>
+                        
+                        <h3>开源承诺</h3>
+                        <p>我们致力于开源社区，并相信通过共享知识和工具可以推动整个行业的发展。我们的工具是完全开源的，欢迎社区贡献和改进。</p>
+                        
+                        <div class="about-cta">
+                            <a href="https://github.com/yourusername/curl-to-json-tool" class="btn btn-secondary">查看GitHub仓库</a>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">每月访问量</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100K+</div>
+                            <div class="stat-label">API调用</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">4.9/5</div>
+                            <div class="stat-label">用户满意度</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">GitHub星标</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Curl to JSON</h2>
+                    <p>简化开发者的工作流程</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>产品</h3>
+                        <ul>
+                            <li><a href="https://curl-to.com">在线工具</a></li>
+                            <li><a href="https://curl-to.com/api-docs">API文档</a></li>
+                            <li><a href="https://curl-to.com/examples">使用示例</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>资源</h3>
+                        <ul>
+                            <li><a href="https://curl-to.com/blog">博客</a></li>
+                            <li><a href="https://curl-to.com/tutorials">教程</a></li>
+                            <li><a href="https://curl-to.com/faq">常见问题</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>社区</h3>
+                        <ul>
+                            <li><a href="https://github.com/yourusername/curl-to-json-tool">GitHub</a></li>
+                            <li><a href="https://twitter.com/curltojson">Twitter</a></li>
+                            <li><a href="https://curl-to.com/discord">Discord</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>公司</h3>
+                        <ul>
+                            <li><a href="https://curl-to.com/about">关于我们</a></li>
+                            <li><a href="https://curl-to.com/contact">联系我们</a></li>
+                            <li><a href="https://curl-to.com/privacy">隐私政策</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Curl to JSON 转换工具. 保留所有权利.</p>
+                <p>
+                    <a href="https://curl-to.com">官方网站</a> | 
+                    <a href="https://curl-to.com/terms">服务条款</a> | 
+                    <a href="https://curl-to.com/privacy">隐私政策</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
